@@ -16,7 +16,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Alterar a cada 3 segundos
+    }, 4000); // Alterar a cada 3 segundos
     return () => clearInterval(interval);
   }, [images.length]);
 

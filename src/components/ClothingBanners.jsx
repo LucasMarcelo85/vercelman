@@ -2,10 +2,10 @@ import { Box, Grid, Typography, Button } from '@mui/material';
 
 const ClothingBanners = () => {
   const banners = [
-    { title: 'Summer Collection', description: 'Fresh and vibrant styles', img: 'url-to-summer-collection.jpg' },
-    { title: 'Winter Wear', description: 'Stay warm and stylish', img: 'url-to-winter-wear.jpg' },
-    { title: 'Casual Fit', description: 'Comfortable everyday wear', img: 'url-to-casual-fit.jpg' },
-    { title: 'Formal Attire', description: 'Look sharp and professional', img: 'url-to-formal-attire.jpg' },
+    { title: 'Vercel Man', description: 'Roupa M', img: '/adicionar-ao-carrinho.png' },
+    { title: 'Vercel Man', description: 'Roupa M', img: '/adicionar-ao-carrinho.png' },
+    { title: 'Vercel Man', description: 'Roupa M', img: '/adicionar-ao-carrinho.png' },
+    
   ];
 
   return (
@@ -35,8 +35,10 @@ const ClothingBanners = () => {
                 {banner.description}
               </Typography>
               <Button variant="contained" color="primary" sx={{ marginTop: '10px' }}>
-                Shop Now
+                Oferta
               </Button>
+
+              
             </Box>
           </Grid>
         ))}

@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ProductGrid from '../components/ProductGrid';
 import Carousel from '../components/Carousel'; // Importando o componente
+import ClothingBanners from '../components/ClothingBanners';
 
 const HomePage = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -28,6 +29,7 @@ const HomePage = () => {
         </section>
 
         <ProductGrid addToCart={addToCart} />
+        <ClothingBanners/>
       </main>
       <Footer />
     </div>

@@ -1,10 +1,10 @@
 import { Grid, Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
 
 const products = [
-  { id: 1, name: 'Verce1', price: 25.00, img: '/placeholder.png' },
-  { id: 2, name: 'Verce2', price: 120.00, img: '/placeholder.png' },
-  { id: 3, name: 'Verce3', price: 80.00, img: '/placeholder.png' },
-  { id: 4, name: 'Verce4', price: 50.00, img: '/placeholder.png' },
+  { id: 1, name: 'Verce1', price: 25.00, img: '/banner1.jpeg' },
+  { id: 2, name: 'Verce2', price: 120.00, img: '/banner1.jpeg' },
+  { id: 3, name: 'Verce3', price: 80.00, img: '/banner1.jpeg' },
+  { id: 4, name: 'Verce4', price: 50.00, img: '/banner1.jpeg' },
 ];
 
 const ProductGrid = ({ addToCart }) => {
