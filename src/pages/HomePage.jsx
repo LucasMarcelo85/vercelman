@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import ProductGrid from '../components/ProductGrid';
 import Carousel from '../components/Carousel'; // Importando o componente
 import ClothingBanners from '../components/ClothingBanners';
+import QuadrupleBanners from '../components/QuadrupleBanners';
 
 const HomePage = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -30,6 +31,7 @@ const HomePage = () => {
 
         <ProductGrid addToCart={addToCart} />
         <ClothingBanners/>
+        <QuadrupleBanners/>
       </main>
       <Footer />
     </div>
