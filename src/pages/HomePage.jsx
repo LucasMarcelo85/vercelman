@@ -1,18 +1,16 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ProductGrid from '../components/ProductGrid';
+import Carousel from '../components/Carousel'; // Importando o componente
 
 const HomePage = () => {
-  // Estado do carrinho movido para o HomePage
   const [cartItems, setCartItems] = useState([]);
 
-  // Função para adicionar um produto ao carrinho
   const addToCart = (item) => {
     setCartItems([...cartItems, item]);
   };
 
-  // Função para remover um produto do carrinho
   const removeFromCart = (index) => {
     const updatedCart = cartItems.filter((_, i) => i !== index);
     setCartItems(updatedCart);
@@ -20,15 +18,15 @@ const HomePage = () => {
 
   return (
     <div>
-      {/* Passando cartItems e removeFromCart para o Header */}
       <Header cartItems={cartItems} onRemoveFromCart={removeFromCart} />
       <main>
-        <section className="banner">
-          <h1>Vercel Man</h1>
-          
-        </section>
+
         
-        {/* Passando a função addToCart para o ProductGrid */}
+        {/* Adicionando o carrossel abaixo do banner */}
+        <section className="carousel-section">
+          <Carousel />
+        </section>
+
         <ProductGrid addToCart={addToCart} />
       </main>
       <Footer />
