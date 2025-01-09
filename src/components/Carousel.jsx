@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react';
 
+
+
 const Carousel = () => {
   const images = [
-    '/public/banner1.jpeg',
-    '/public/footer.jpeg',
-    '/public/icone.jpeg',
+      '/banner1.jpeg',
+    '/banner2.jpeg',
+    '/banner3.jpeg',
+    
   ];
   
   const [currentIndex, setCurrentIndex] = useState(0);
